@@ -1,0 +1,208 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --redColor: hsl(0, 78%, 62%);
+    --cyanColor: hsl(180, 62%, 55%);
+    --orangeColor: hsl(34, 97%, 64%);
+    --blueColor: hsl(212, 86%, 64%);
+    --headingColor: hsl(234, 12%, 34%);
+    --paragraphColor: hsl(229, 6%, 66%);
+    --bgColor: hsl(0, 0%, 98%);
+}
+img,
+svg{
+    display: block;
+    max-width: 100%;
+}
+/* html, body{
+    height: 100%;
+} */
+body{
+    font-family: "Poppins", sans-serif;
+    display: grid;
+    place-content: center;
+    background: var(--bgColor);
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    padding: 80px 0px;
+}
+.card-text{
+    text-align: center;
+    padding: 5rem 10rem;
+}
+.card-text h1{
+    font-weight: 300;
+    color: var(--paragraphColor);
+    font-size: 42px;
+    letter-spacing: 1px;
+}
+.card-text span{
+    font-weight: 600;
+    color: var(--headingColor);
+    font-size: 43px;
+    letter-spacing: 1px;
+}
+.card-text p{
+    color: var(--paragraphColor);
+    font-size: 15px;
+    font-weight: 500;
+    overflow-wrap: break-word;
+    letter-spacing: 1px;
+    margin-top: 20px;
+}
+.boxes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+.supervisor{
+    align-self: center;
+    background-color: var(--bgColor);
+    border-radius: 0.5rem;
+    padding: 3rem;
+    border-top: 5px solid var(--cyanColor);
+    box-shadow: 5px 5px 50px var(--paragraphColor);
+}
+.supervisor h3{
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--headingColor);
+}
+.supervisor p{
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--paragraphColor);
+    letter-spacing: 1px;
+    line-height: 1.7em;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.supervisor img{
+    float: right;
+    overflow: auto;
+    padding-top: 20px;
+}
+.middle{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.karma{
+    align-self: center;
+    background-color: var(--bgColor);
+    border-radius: 0.5rem;
+    padding: 3rem;
+    border-top: 5px solid var(--orangeColor);
+    box-shadow: 5px 5px 50px var(--paragraphColor);
+}
+.karma h3{
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--headingColor);
+}
+.karma p{
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--paragraphColor);
+    letter-spacing: 1px;
+    line-height: 1.7em;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.karma img{
+    float: right;
+    overflow: auto;
+    padding-top: 20px;
+}
+.team_leader{
+    align-self: center;
+    background-color: var(--bgColor);
+    border-radius: 0.5rem;
+    padding: 3rem;
+    border-top: 5px solid var(--redColor);
+    box-shadow: 5px 5px 50px var(--paragraphColor);
+}
+.team_leader h3{
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--headingColor);
+}
+.team_leader p{
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--paragraphColor);
+    letter-spacing: 1px;
+    line-height: 1.7em;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.team_leader img{
+    float: right;
+    overflow: auto;
+    padding-top: 20px;
+}
+.calculator{
+    align-self: center;
+    background-color: var(--bgColor);
+    border-radius: 0.5rem;
+    padding: 3rem;
+    border-top: 5px solid var(--blueColor);
+    box-shadow: 5px 5px 50px var(--paragraphColor);
+}
+.calculator h3{
+    font-size: 22px;
+    font-weight: 600;
+    color: var(--headingColor);
+}
+.calculator p{
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--paragraphColor);
+    letter-spacing: 1px;
+    line-height: 1.7em;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+.calculator img{
+    float: right;
+    overflow: auto;
+    padding-top: 20px;
+}
+@media all and (max-width: 600px){
+    .boxes{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .card-text{
+        text-align: center;
+        padding: 2.5rem 0;
+    }
+    .card-text h1{
+        font-size: 22px;
+    }
+    .card-text span{
+        font-size: 23px;
+    }
+    .card-text p{
+        font-size: 14px;
+        letter-spacing: 0;
+    }
+    .supervisor{
+        box-shadow: 0px 5px 10px var(--paragraphColor);
+    }
+    .team_leader{
+        box-shadow: 0px 5px 10px var(--paragraphColor);
+    }
+    .karma{
+        box-shadow: 0px 5px 10px var(--paragraphColor);
+    }
+    .calculator{
+        box-shadow: 0px 5px 10px var(--paragraphColor);
+    }
+}
